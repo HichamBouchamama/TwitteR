@@ -13,7 +13,7 @@ clean.text = function(x)
     x = gsub("(.*?)($|'|-|_|[^[:punct:]]+?)(.*?)", "\\2", x)
     # remove numbers
     x = gsub("[[:digit:]]", " ", x)
-    # remove links http
+    # remove links http j'aime bien cette fonction
     x = gsub("http\\w+", " ", x)
     # remove tabs
     x = gsub("[ |\t]{2,}", " ", x)
